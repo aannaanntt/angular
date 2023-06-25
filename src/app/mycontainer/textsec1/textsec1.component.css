@@ -1,0 +1,34 @@
+.text-sec1{
+	width: 50%;
+	background: white;
+	margin: 10px 5px;
+	padding: 10px;
+}
+
+.heading-red{
+	color: red;
+	font-size: 18px;
+}
+
+.text-sec1 p {
+	color: black;
+	font-size: 16px;
+	padding: 10px 0;
+	line-height: 20px;
+}
+
+.btn-red{
+	background: red;
+	color: white;
+	padding: 15px ;
+	border-radius: 50px;
+	text-decoration: none;
+	float: right;
+}
+
+.btn-red:hover {
+	background: black;
+}
+.clear{
+	clear: both;
+}

@@ -1,0 +1,9 @@
+<div>
+<div>
+  <h2 >Laptop</h2>
+  <button (click)="onSelectProduct('Laptop')"> Select product</button>
+</div>
+  <h2 *ngIf='!productSelected'>Please select any product.</h2>
+  <h2 *ngIf='productSelected'>{{selectedProduct}} is selected</h2>
+  <button>Add to cart</button>
+</div>

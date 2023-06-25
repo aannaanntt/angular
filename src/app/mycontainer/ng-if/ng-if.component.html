@@ -1,0 +1,33 @@
+<!-- <button class="btn" (click)="onClick()">Create Block</button> -->
+<!-- <div *ngIf="enabled; then thenblock else elseblock">
+  <ng-template #thenblock>
+    Block has been created
+  </ng-template>
+  <ng-template #elseblock>
+    <div>No block created</div>
+    
+
+  </ng-template> -->
+
+
+<div>
+  <select (change)="onChange($event)">
+    <option value="default">Select product</option>
+<option value="Laptop">Laptop</option>
+<option value="Mobile">Mobile</option>
+<option value="Tv">Tv</option>
+<option value="Washing Machine">Washing Machine</option>
+
+  </select>
+
+  <div class="cl" [ngSwitch]="selectedProduct">
+    <h2 *ngSwitchDefault>Please select product</h2>
+    <h2 *ngSwitchCase="'Laptop'">Laptop</h2>
+    <h2 *ngSwitchCase="'Mobile'">Mobile</h2>
+    <h2 *ngSwitchCase="'Tv'">Tv</h2>
+    <h2 *ngSwitchCase="'Washing Machine'">Washing Machine</h2>
+
+    
+  </div>
+</div>
+
